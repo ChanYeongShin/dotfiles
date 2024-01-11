@@ -94,7 +94,52 @@
         "key": "ctrl+shift+j",
         "command": "workbench.action.splitEditorDown"
     },
-
+    
+    // Split Terminal
+    {
+        "key": "ctrl+shift+h",
+        "when": "terminalFocus",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.splitEditorLeft",
+                "workbench.action.createTerminalEditor"
+            ]
+        }
+    },
+    {
+        "key": "ctrl+shift+j",
+        "when": "terminalFocus",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.splitEditorDown",
+                "workbench.action.createTerminalEditor"
+            ]
+        }
+    },
+    {
+        "key": "ctrl+shift+k",
+        "when": "terminalFocus",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.splitEditorUp",
+                "workbench.action.createTerminalEditor"
+            ]
+        }
+    },
+    {
+        "key": "ctrl+shift+l",
+        "when": "terminalFocus",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.splitEditorRight",
+                "workbench.action.createTerminalEditor"
+            ]
+        }
+    },
 
     // Trigger Suggest
     // {
