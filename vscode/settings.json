@@ -41,14 +41,15 @@
 
 
     // ctrl + [hjkl] to switch between editor groups including terminal
-    // "terminal.integrated.commandsToSkipShell": [
-    //     "workbench.action.navigateUp",
-    //     "workbench.action.focusBelowGroup",
-    //     "workbench.action.focusLeftGroup",
-    //     "workbench.action.focusRightGroup",
-    //     "workbench.action.focusActiveEditorGroup",
-    //     "workbench.action.focusPanel"
-    // ],
+    "terminal.integrated.commandsToSkipShell": [
+        // "workbench.action.navigateUp",
+        "workbench.action.closeActiveEditor"
+        // "workbench.action.focusBelowGroup",
+        // "workbench.action.focusLeftGroup",
+        // "workbench.action.focusRightGroup",
+        // "workbench.action.focusActiveEditorGroup",
+        // "workbench.action.focusPanel"
+    ],
 
 
     // Extension for make vscode transparent
@@ -162,6 +163,16 @@
     ],
 
     "vim.normalModeKeyBindingsNonRecursive": [
+        // find next / previous symbol
+        {
+            "before" : [","],
+            "after" : ["#"]
+        },
+        {
+            "before" : ["."],
+            "after" : ["*"]
+        },
+
         // HJKL
         {
             "before": ["H"],
@@ -323,5 +334,5 @@
             "before": ["F"],
             "after": ["leader", "leader", "F"],
         },
-    ],
+    ]
 }
