@@ -59,6 +59,29 @@
         "when": "panelFocus"
     },
 
+    // Move editor to another group hjklj
+    {
+        "key": "ctrl+alt+h",
+        "command": "workbench.action.moveEditorToLeftGroup",
+        "when": "!panelFocus",
+    },
+    {
+        "key": "ctrl+alt+j",
+        "command": "workbench.action.moveEditorToBelowGroup",
+        "when": "!panelFocus",
+    },
+    {
+        "key": "ctrl+alt+k",
+        "command": "workbench.action.moveEditorToAboveGroup",
+        "when": "!panelFocus",
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "workbench.action.moveEditorToRightGroup",
+        "when": "!panelFocus",
+    },
+
+
 
     // Move among tabs
     {
@@ -94,7 +117,7 @@
         "key": "ctrl+shift+j",
         "command": "workbench.action.splitEditorDown"
     },
-    
+
     // Split Terminal
     {
         "key": "ctrl+shift+h",
@@ -140,6 +163,7 @@
             ]
         }
     },
+
 
     // Trigger Suggest
     // {
@@ -267,6 +291,5 @@
         "key": "shift+alt+enter",
         "command": "-jumpy2.toggleSelection",
         "when": "editorTextFocus"
-    },
-
+    }
 ]
